@@ -1,0 +1,106 @@
+.resume
+    padding-bottom: 0
+    
+    & *
+        color: #43413F
+    display: flex
+    min-height: 100vh
+    p
+        margin: 0 0 5% 0
+
+
+    
+.skills
+    flex: 1 1 40%
+
+/*.skill-unit
+    max-width: 90%
+    .skill-set
+        margin-bottom: 10%
+        .skill-line
+            max-width: 90%
+            height: 5px
+            background: #C8C2BD
+            .skill-have
+                width: 90%
+                height: inherit
+                background: #6A6562
+    
+    & .skill-set:nth-child(2) .skill-have
+        width: 95%        
+    & .skill-set:nth-child(3) .skill-have
+        width: 80%
+    & .skill-set:nth-child(4) .skill-have
+        width: 55%
+    & .skill-set:nth-child(5) .skill-have
+        width: 65%
+    & .skill-set:nth-child(6) .skill-have
+        width: 55%
+    & .skill-set:nth-child(7) .skill-have
+        width: 70%
+    & .skill-set:nth-child(8) .skill-have
+        width: 85%*/
+
+.experience
+    flex: 1 1 60%
+    
+    .resume-set
+        max-width: 90%
+        
+    .resume-unit
+        display: flex
+        box-shadow: 0 0 0 2px $gray
+        padding: 5px
+        margin-bottom: 5%
+        & > *
+            padding: 0
+            margin: 0
+
+        
+            
+    .resume-logo
+        align-self: center
+        img
+            max-width: 180px
+            padding: 0 10%
+    .resume-description
+        text-align: justify
+        padding: 0 5%
+        h4 
+            margin-bottom: 0
+        span
+            font-size: 12px
+            font-style: italic
+            color: $gray
+        p span 
+            font-weight: 800 
+            font-size: unset
+            display: inline-block
+            color: #43413F
+
+.skills-description
+    h4
+        text-align: justify
+        span 
+            border-bottom: 3px solid $maroon
+
+@media screen and (max-width: 850px)
+    .resume
+        flex-direction: column
+    .skills-description
+        margin: auto
+        width: 90%
+
+        /*.skill-unit
+            margin: auto
+            .skill-line
+                margin-left: 1%*/
+
+    .experience
+        .resume-set
+            margin: auto
+
+        .resume-unit
+            flex-direction: column
+
+ 

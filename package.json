@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm-run-all -p html css",
+    "html": "live-server",
+    "css" : "sass --watch assets/css/main.sass:assets/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
